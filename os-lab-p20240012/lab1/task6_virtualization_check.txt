@@ -1,0 +1,3 @@
+none
+6.8.0-101-generic
+pochsathya-Legion-Pro-5-16IRX8

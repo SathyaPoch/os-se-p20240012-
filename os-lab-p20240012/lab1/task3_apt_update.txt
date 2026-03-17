@@ -1,0 +1,7 @@
+Ign:1 cdrom://Ubuntu 22.04.5 LTS _Jammy Jellyfish_ - Release amd64 (20240911) jammy InRelease
+Hit:2 cdrom://Ubuntu 22.04.5 LTS _Jammy Jellyfish_ - Release amd64 (20240911) jammy Release
+Hit:4 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:5 http://us.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:6 http://us.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:7 http://us.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Reading package lists...
