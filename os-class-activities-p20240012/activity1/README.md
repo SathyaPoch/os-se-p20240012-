@@ -1,8 +1,8 @@
 # Class Activity 1 — System Calls in Practice
 
-- **Student Name:** [Your Name Here]
-- **Student ID:** [Your Student ID Here]
-- **Date:** [Date of Submission]
+- **Student Name:** Poch Sathya
+- **Student ID:** p20240012
+- **Date:** 30/03/2026
 
 ---
 
