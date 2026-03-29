@@ -9,8 +9,13 @@
 
 Briefly describe what you observed about your OS and Kernel here.
 
-<!-- Insert your screenshot for Task 1 below: -->
-<!-- SCREENSHOT REQUIREMENT: Show the terminal after running uname -a and lsb_release -a, or the contents of your task1_os_info.txt file. -->
+--> I saw UBUNTU version and other informations about UBUNTU such as : 
+    Linux pochsathya-Legion-Pro-5-16IRX8 6.8.0-101-generic #101~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Feb 11 13:19:54 UTC  x86_64 x86_64 x86_64 GNU/Linux
+    Distributor ID:	Ubuntu
+    Description:	Ubuntu 22.04.5 LTS
+    Release:	22.04
+    Codename:	jammy
+
 ![alt text](../lab1/pictures/image.png)
 ---
 
@@ -18,10 +23,9 @@ Briefly describe what you observed about your OS and Kernel here.
 
 Briefly describe your experience creating, moving, and deleting files.
 
-<!-- Insert your screenshot for Task 2 below: -->
-<!-- SCREENSHOT REQUIREMENT: Show the terminal running the file manipulation commands (mkdir, touch, cp, mv, rm) or the final cat of your task2_file_commands.txt file. -->
+--> I practice managing and handling files through command line.
 
-![alt text](../lab1/pictures/image.png)
+![alt text](../lab1/images/task2.jpg)
 
 ---
 
@@ -29,8 +33,11 @@ Briefly describe your experience creating, moving, and deleting files.
 
 Explain the difference you observed between `remove` and `purge`.
 
-<!-- Insert your screenshot for Task 3 below: -->
-<!-- SCREENSHOT REQUIREMENT: Show the output of ls -ld /etc/mc after running apt-get remove (folder still exists) versus after running apt-get purge (folder is gone). -->
+--> The primary difference is how they handle configuration files. `apt remove` command uninstalls the main software package but leaves its configuration files behind on the system. But, `apt purge` completely removes both the software and all the configuration files,.
+
+
+![alt text](../lab1/images/task3.jpg)
+
 
 ---
 
@@ -38,8 +45,11 @@ Explain the difference you observed between `remove` and `purge`.
 
 Briefly describe how you ran a background process and found it in the process list.
 
-<!-- Insert your screenshot for Task 4 below: -->
-<!-- SCREENSHOT REQUIREMENT: Show the terminal where you ran sleep 120 & and the subsequent ps output showing the sleep process running. -->
+--> To run a program in the background, I appended an ampersand (`&`) to the end of the command . This allowed the command to execute without tying up the terminal. I then located it in the process list by running the `ps` command, where I could clearly identify the `sleep` process running in the background with the Process ID (PID) of 10614.
+
+
+![alt text](../lab1/images/task4.jpg)
+
 
 ---
 
@@ -47,8 +57,16 @@ Briefly describe how you ran a background process and found it in the process li
 
 Briefly describe the multitasking environment and the background web server.
 
-<!-- Insert your screenshot for Task 5 below: -->
-<!-- SCREENSHOT REQUIREMENT: Show the terminal ps output capturing the multiple background tasks (sleep and python3 server) running at the same time. -->
+--> Based on the `ps` output, the system demonstrates a true multitasking environment by running multiple processes concurrently within the same terminal session (`pts/0`). 
+
+The `python3` process (PID 12260) is running the web server in the background. Because it is running as a background task, it continuously listens for web requests without locking up the terminal. This allows the operating system to simultaneously execute other background programs .
+
+
+![alt text](../lab1/images/task5.1.jpg)
+
+<br></br>
+
+![alt text](../lab1/images/task5.2.jpg)
 
 ---
 
@@ -56,5 +74,40 @@ Briefly describe the multitasking environment and the background web server.
 
 State whether your system is running on a virtual machine or physical hardware based on the command outputs.
 
-<!-- Insert your screenshot for Task 6 below: -->
-<!-- SCREENSHOT REQUIREMENT: Show the terminal output of the systemd-detect-virt and lscpu commands. -->
+--> Based on the output 'none'.My system is running directly on physical hardware no inside a virtual machine.
+
+![alt text](../lab1/images/task6.jpg)
+
+
+```
+C:.
+└───os-lab-p20240019
+    └───lab1
+        │   README.md
+        │   task1_os_info.txt
+        │   task2_file_commands.txt
+        │   task3_apt_install.txt
+        │   task3_apt_purge.txt
+        │   task3_apt_remove.txt
+        │   task3_apt_update.txt
+        │   task3_config_after_purge.txt
+        │   task3_config_after_remove.txt
+        │   task3_verify_install.txt
+        │   task4_process_list.txt
+        │   task5_app_verify.txt
+        │   task5_multitasking.txt
+        │   task6_virtualization_check.txt
+        │
+        ├───image
+        │       task1.png
+        │       task2.png
+        │       task3.png
+        │       task4.png
+        │       task5.png
+        │       task6.png
+        │
+        └───task2_files
+                a.txt
+                b_renamed.txt
+```
+
