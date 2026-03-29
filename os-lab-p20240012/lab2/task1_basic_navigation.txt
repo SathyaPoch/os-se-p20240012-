@@ -1,0 +1,79 @@
+/home/pochsathya
+total 216
+drwxr-x--- 40 pochsathya pochsathya  4096 Mar 27 04:21 .
+drwxr-xr-x  3 root       root        4096 Mar 12 08:05 ..
+-rw-------  1 pochsathya pochsathya 23057 Mar 29 02:10 .bash_history
+-rw-r--r--  1 pochsathya pochsathya   220 Mar 12 08:05 .bash_logout
+-rw-r--r--  1 pochsathya pochsathya  4139 Mar 21 12:22 .bashrc
+drwxrwxr-x  7 pochsathya pochsathya  4096 Mar 26 07:12 build
+drwx------ 27 pochsathya pochsathya  4096 Mar 27 10:27 .cache
+drwx------ 22 pochsathya pochsathya  4096 Mar 29 02:02 .config
+drwx------  4 pochsathya pochsathya  4096 Mar 27 04:45 .copilot
+drwxr-xr-x  6 pochsathya pochsathya  4096 Mar 27 04:45 Desktop
+drwxr-xr-x  2 pochsathya pochsathya  4096 Mar 12 04:12 Documents
+drwxrwxr-x  3 pochsathya pochsathya  4096 Mar 12 08:22 .dotnet
+drwxr-xr-x  6 pochsathya pochsathya  4096 Mar 29 01:57 Downloads
+drwxr--r--  5 pochsathya pochsathya  4096 Mar 19 07:40 .gazebo
+-rw-rw-r--  1 pochsathya pochsathya    63 Mar 17 03:56 .gitconfig
+drwxrwxr-x  3 pochsathya pochsathya  4096 Mar 19 05:20 .gitlab
+drwx------  2 pochsathya pochsathya  4096 Mar 27 04:19 .gnupg
+drwxrwxr-x  2 pochsathya pochsathya  4096 Mar 25 11:53 .gphoto
+drwxr--r--  2 pochsathya pochsathya  4096 Mar 19 07:33 .ignition
+drwxrwxr-x  6 pochsathya pochsathya  4096 Mar 26 07:12 install
+drwxrwxr-x  4 pochsathya pochsathya  4096 Mar 27 04:19 .java
+drwxrwxr-x  4 pochsathya pochsathya  4096 Mar 27 04:23 .jdks
+drwx------  4 pochsathya pochsathya  4096 Mar 19 07:22 .local
+drwxrwxr-x  3 pochsathya pochsathya  4096 Mar 26 07:12 log
+-rw-rw-r--  1 pochsathya pochsathya   640 Mar 19 04:43 microsoft.gpg
+drwx------  3 pochsathya pochsathya  4096 Mar 18 23:48 .mozilla
+drwxr-xr-x  2 pochsathya pochsathya  4096 Mar 12 04:12 Music
+drwxrwxr-x  4 pochsathya pochsathya  4096 Mar 21 12:53 .npm
+drwxrwxr-x  8 pochsathya pochsathya  4096 Mar 21 12:23 .nvm
+drwxrwxr-x  6 pochsathya pochsathya  4096 Mar 18 23:22 os-se-p20240012
+drwxr-xr-x  3 pochsathya pochsathya  4096 Mar 12 08:44 Pictures
+drwx------  3 pochsathya pochsathya  4096 Mar 12 08:20 .pki
+-rw-r--r--  1 pochsathya pochsathya   807 Mar 12 08:05 .profile
+drwxr-xr-x  2 pochsathya pochsathya  4096 Mar 12 04:12 Public
+drwxrwxr-x  2 pochsathya pochsathya  4096 Mar 26 02:34 .redhat
+drwxrwxr-x  3 pochsathya pochsathya  4096 Mar 17 08:21 .ros
+drwxrwxr-x  7 pochsathya pochsathya  4096 Mar 26 07:39 ros2_ws
+drwxrwxr-x  2 pochsathya pochsathya  4096 Mar 19 07:33 .sdformat
+drwx------  8 pochsathya pochsathya  4096 Mar 27 04:19 snap
+drwx------  2 pochsathya pochsathya  4096 Mar 17 02:58 .ssh
+-rw-r--r--  1 pochsathya pochsathya     0 Mar 12 08:17 .sudo_as_admin_successful
+drwxrwxr-x  3 pochsathya pochsathya  4096 Mar 19 07:22 .tarball-installations
+drwxr-xr-x  2 pochsathya pochsathya  4096 Mar 12 04:12 Templates
+drwx------  6 pochsathya pochsathya  4096 Mar 18 23:48 .thunderbird
+drwxr-xr-x  3 pochsathya pochsathya  4096 Mar 23 05:53 Videos
+drwxrwxr-x  4 pochsathya pochsathya  4096 Mar 12 08:20 .vscode
+-rw-rw-r--  1 pochsathya pochsathya   177 Mar 19 04:43 .wget-hsts
+drwxrwxr-x  5 pochsathya pochsathya  4096 Mar 21 12:33 Y2-sem2
+--- Root directory (/) ---
+/
+bin
+boot
+cdrom
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+swapfile
+sys
+tmp
+usr
+var
+--- Back to home ---
+/home/pochsathya

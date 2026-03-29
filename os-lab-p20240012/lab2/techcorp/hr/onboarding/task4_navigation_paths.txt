@@ -1,0 +1,4 @@
+/home/pochsathya/os-se-p20240012/os-lab-p20240012/lab2/techcorp/hr/onboarding
+checklist.txt
+task4_navigation_paths.txt
+welcome_guide.txt

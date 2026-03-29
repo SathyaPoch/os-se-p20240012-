@@ -1,0 +1,11 @@
+total 36
+drwxrwxr-x 3 pochsathya pochsathya  4096 Mar 26 05:31 .
+drwxrwxr-x 3 pochsathya pochsathya  4096 Mar 26 05:28 ..
+drwxrwxr-x 3 pochsathya pochsathya  4096 Mar 26 05:24 build
+-rwxrwxr-x 1 pochsathya pochsathya 16400 Mar 26 05:31 forkchild
+-rw-rw-r-- 1 pochsathya pochsathya  1430 Mar 26 05:21 forkchild.c
+-rw-rw-r-- 1 pochsathya pochsathya     0 Mar 26 05:31 result_forkchild.txt
+Parent process (PID: 19955) — creating child...
+Parent: waiting for child (PID: 19956) to finish...
+Parent: child exited with status 0
+Parent: done.

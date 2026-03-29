@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/pochsathya/os-se-p20240012/os-class-activities-p20240012/activity1",
-      "program": "/home/pochsathya/os-se-p20240012/os-class-activities-p20240012/activity1/build/Debug/outDebug",
+      "cwd": "/home/pochsathya/os-se-p20240012/os-class-activities-p20240012/activity2/task1",
+      "program": "/home/pochsathya/os-se-p20240012/os-class-activities-p20240012/activity2/task1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
