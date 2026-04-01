@@ -1,0 +1,30 @@
+ 1806  cd ..
+ 1807  cd activity3
+ 1808  git  status
+ 1809  cd .. 
+ 1810  ssh ssh2.rathpisey.site
+ 1811  cd os-class-activities-p20240012
+ 1812  git status
+ 1813  cd activity1
+ 1814  git status
+ 1815  cd ..
+ 1816  git status
+ 1817  git log --oneline
+ 1818  cd os-class-activities-p20240012
+ 1819  cd activity3
+ 1820  ls
+ 1821  $ history | tail -n 30 > command_used_java.txt
+ 1822  $ cd ../task3_java
+ 1823  cd task3
+ 1824  cd task3_java
+ 1825  $ history | tail -n 30 > command_used_java.txt
+ 1826  javac ThreadDemo.java
+ 1827  java ThreadDemo > result_thread_demo.txt 2>&1
+ 1828  cat result_thread_demo.txt
+ 1829  javac RunnableDemo.java
+ 1830  java RunnableDemo > result_runnable_demo.txt 2>&1
+ 1831  cat result_runnable_demo.txt
+ 1832  javac PoolDemo.java
+ 1833  java PoolDemo > result_pool_demo.txt 2>&1
+ 1834  cat result_pool_demo.txt
+ 1835  history | tail -n 30 > command_used_java.txt
