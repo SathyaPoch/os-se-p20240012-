@@ -10,7 +10,7 @@
 
 Screenshot of running `hello_syscall.c` on Linux:
 
-![Hello syscall](screenshots/Example1.jpg)
+![Hello syscall](screenshots/hello_syscall.jpg)
 
 Screenshot of running `hello_winapi.c` on Windows (CMD/PowerShell/VS Code):
 
@@ -18,7 +18,7 @@ Screenshot of running `hello_winapi.c` on Windows (CMD/PowerShell/VS Code):
 
 Screenshot of running `copyfilesyscall.c` on Linux:
 
-![Copy file syscall](screenshots/Example3.png)
+![Copy file syscall](screenshots/copyfilesyscall.png)
 
 ---
 
@@ -238,26 +238,27 @@ Screenshot of running on Windows:
 
 > 📸 Screenshot of `uname -a`, `/proc/cpuinfo`, `/proc/meminfo`, `/proc/version`, `/proc/uptime`:
 
-![System Info](screenshots/task4-A.1.jpg)
+![System Info](screenshots/task4_system_info.jpg)
 
-![System Info](screenshots/task4-A.2.jpg)
+![System Info](screenshots/task4_system_info1.jpg)
 
-![System Info](screenshots/task4-A.3.jpg)
+![System Info](screenshots/task4_system_info2.jpg)
 
-![System Info](screenshots/task4-A.4.jpg)
+![System Info](screenshots/task4_system_info3.jpg)
+
+![System Info](screenshots/task4_system_info4.jpg)
 
 
 ### Process Information
 
 > 📸 Screenshot of `/proc/self/status`, `/proc/self/maps`, `ps aux`:
 
-![Process Info](screenshots/task4-B.1.jpg)
+![Process Info](screenshots/task4_process_info.jpg)
+
+![Process Info](screenshots/task4_process_info1.jpg)
 <br></br>
 
-![Process Info](screenshots/task4-B.2.jpg)
-<br></br>
-
-![Process Info](screenshots/task4-B.4.jpg)
+![Process Info](screenshots/task4_process_info3.jpg)
 
 
 
@@ -265,10 +266,10 @@ Screenshot of running on Windows:
 
 > 📸 Screenshot of `lsmod` and `modinfo`:
 
-![Kernel Modules](screenshots/task4-C.1.jpg)
+![Kernel Modules](screenshots/task4_modules.jpg)
 <br></br>
 
-![Kernel Modules](screenshots/task4-C.2.jpg)
+![Kernel Modules](screenshots/task4_modules1.jpg)
 
 ### OS Layers Diagram
 
