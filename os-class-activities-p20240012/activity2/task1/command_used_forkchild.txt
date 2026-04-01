@@ -1,0 +1,20 @@
+ 1231  git pull
+ 1232  git push
+ 1233  git pull origin main --force 
+ 1234  git push origin main --force
+ 1235  cd activity1
+ 1236  git add . 
+ 1237  git commit -m "update"
+ 1238  git add . 
+ 1239  git commit -m "update"
+ 1240  git push
+ 1241  clear
+ 1242  cd os-class-activities-p20240012
+ 1243  cd activity2
+ 1244  touch REDME.md
+ 1245  cd task1
+ 1246  gcc -o forkchild forkchild.c
+ 1247  ./forkchild > result_forkchild.txt 2>&1
+ 1248  cat result_forkchild.txt
+ 1249  ps -ef --forest | grep forkchild
+ 1250  history | tail -n 20 > command_used_forkchild.txt

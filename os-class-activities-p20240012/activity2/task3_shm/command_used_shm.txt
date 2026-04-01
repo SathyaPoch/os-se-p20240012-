@@ -1,0 +1,20 @@
+ 1287  touch sender.c
+ 1288  touch receiver.c
+ 1289  clear
+ 1290  gcc -o sender sender.c -lrt
+ 1291  gcc -o receiver receiver.c -lrt
+ 1292  ./sender
+ 1293  ./receiver > result-mq-ipc.txt
+ 1294  cat result-mq-ipc.txt
+ 1295  history | tail -n 20 > command_used_mq.txt
+ 1296  gcc -o shm-producer shm-producer.c -lrt
+ 1297  clear
+ 1298  cd os-class-activities-p20240012
+ 1299  cd activity2
+ 1300  cd task3_shm
+ 1301  gcc -o shm-producer shm-producer.c -lrt
+ 1302  gcc -o shm-consumer shm-consumer.c -lrt
+ 1303  ./shm-producer
+ 1304  ./shm-consumer > result-shm-ipc.txt
+ 1305  cat result-shm-ipc.txt
+ 1306  history | tail -n 20 > command_used_shm.txt

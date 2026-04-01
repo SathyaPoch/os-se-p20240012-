@@ -1,0 +1,18 @@
+pochsat+   40916   39505   40916  0    5 14:15 pts/0    00:00:00 ./threads_observe
+pochsat+   40916   39505   40918  0    5 14:15 pts/0    00:00:00 ./threads_observe
+pochsat+   40916   39505   40919  0    5 14:15 pts/0    00:00:00 ./threads_observe
+pochsat+   40916   39505   40920  0    5 14:15 pts/0    00:00:00 ./threads_observe
+pochsat+   40916   39505   40921  0    5 14:15 pts/0    00:00:00 ./threads_observe
+pochsat+   41068   32409   41068  0    1 14:16 pts/2    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+  40916   40916 pts/0    00:00:00 threads_observe
+  40916   40918 pts/0    00:00:00 threads_observe
+  40916   40919 pts/0    00:00:00 threads_observe
+  40916   40920 pts/0    00:00:00 threads_observe
+  40916   40921 pts/0    00:00:00 threads_observe
+--- /proc/40916/task/ listing ---
+40916
+40918
+40919
+40920
+40921

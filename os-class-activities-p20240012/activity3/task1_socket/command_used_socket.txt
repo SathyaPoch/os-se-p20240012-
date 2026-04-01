@@ -1,0 +1,20 @@
+ 1316  cd ..
+ 1317  $ cd activity3/task1_socket
+ 1318  cd activity2
+ 1319  cd ..
+ 1320  cd activity3
+ 1321  cd task1_socket
+ 1322  touch server.c
+ 1323  touch client.c
+ 1324  gcc -o server server.c
+ 1325  gcc -o client client.c
+ 1326  $ ./server
+ 1327  gcc -o server server.c
+ 1328  $ ./server
+ 1329  clear
+ 1330  gcc -o server server.c
+ 1331  gcc -o client client.c
+ 1332  ./client > result_client.txt 2>&1
+ 1333  wait
+ 1334  cat result_server.txt result_client.txt > result_socket.txt
+ 1335  $ history | tail -n 20 > command_used_socket.txt
