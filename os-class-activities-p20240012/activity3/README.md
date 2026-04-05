@@ -2,7 +2,7 @@
 
 - **Student Name:** Poch Sathya
 - **Student ID:** p20240012
-- **Date:** [Date of Submission]
+- **Date:** 02/04/2026
 
 ---
 
@@ -37,7 +37,6 @@
 
 ### Output — With Mutex (Correct)
 
-_(Include in the same screenshot or a separate one)_
 
 ### Answers
 
@@ -77,13 +76,12 @@ _(Include in the same screenshot or a separate one)_
 3. **thread.join() in Java:**
    > 
 4. **ExecutorService advantages:**
-   > 
-
----
+   
 
 ## Task 4: Observing Threads
 
 ### Linux — `ps -eLf` Output
+
 
 _(Paste the relevant ps output here)_
 
