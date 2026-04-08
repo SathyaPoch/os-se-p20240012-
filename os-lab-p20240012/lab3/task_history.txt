@@ -1,0 +1,101 @@
+=== Full Command History ===
+ 1876  git clone https://github.com/KageKishi/Programming-Cpp.git
+ 1877  [200~ssh ssh2.rathpisey.site
+ 1878  ssh ssh2.rathpisey.site
+ 1879  echo "--- Challenge Wildcards ---" >> task1_wildcards.txt
+ 1880  ls wildcard_lab/r*.txt >> task1_wildcards.txt
+ 1881  ls wildcard_lab/image?.* >> task1_wildcards.txt
+ 1882  touch wildcard_lab/memo_{mon,tue,wed,thu,fri}.txt
+ 1883  ls wildcard_lab/memo_*.txt >> task1_wildcards.txt
+ 1884  rm wildcard_lab/*.log
+ 1885  ls wildcard_lab/ >> task1_wildcards.txt
+ 1886  git add . 
+ 1887  git status
+ 1888  echo "=== Task 4: Shared Objects Exploration ===" > task4_shared_objects.txt
+ 1889  echo "--- Shared libraries used by /bin/ls ---" >> task4_shared_objects.txt
+ 1890  ldd /bin/ls >> task4_shared_objects.txt
+ 1891  echo "" >> task4_shared_objects.txt
+ 1892  echo "--- Shared libraries used by /bin/bash ---" >> task4_shared_objects.txt
+ 1893  ldd /bin/bash >> task4_shared_objects.txt
+ 1894  echo "" >> task4_shared_objects.txt
+ 1895  echo "--- Shared libraries used by /usr/bin/grep ---" >> task4_shared_objects.txt
+ 1896  ldd /usr/bin/grep >> task4_shared_objects.txt
+ 1897  echo "" >> task4_shared_objects.txt
+ 1898  echo "--- File type of libc ---" >> task4_shared_objects.txt
+ 1899  file /lib/x86_64-linux-gnu/libc.so.* >> task4_shared_objects.txt 2>&1
+ 1900  echo "" >> task4_shared_objects.txt
+ 1901  echo "--- Contents of /lib/x86_64-linux-gnu/ (first 30 lines) ---" >> task4_shared_objects.txt
+ 1902  ls /lib/x86_64-linux-gnu/*.so* | head -30 >> task4_shared_objects.txt
+ 1903  echo "" >> task4_shared_objects.txt
+ 1904  echo "--- Contents of /usr/lib/ (first 20 lines) ---" >> task4_shared_objects.txt
+ 1905  ls /usr/lib/*.so* 2>/dev/null | head -20 >> task4_shared_objects.txt
+ 1906  echo "" >> task4_shared_objects.txt
+ 1907  echo "--- Shared library cache: searching for 'libc' ---" >> task4_shared_objects.txt
+ 1908  ldconfig -p | grep libc >> task4_shared_objects.txt
+ 1909  echo "" >> task4_shared_objects.txt
+ 1910  echo "--- Shared library cache: searching for 'libpthread' ---" >> task4_shared_objects.txt
+ 1911  ldconfig -p | grep libpthread >> task4_shared_objects.txt
+ 1912  echo "" >> task4_shared_objects.txt
+ 1913  echo "--- Total number of cached shared libraries ---" >> task4_shared_objects.txt
+ 1914  ldconfig -p | wc -l >> task4_shared_objects.txt
+ 1915  echo "" >> task4_shared_objects.txt
+ 1916  echo "--- Dynamic linker config (/etc/ld.so.conf) ---" >> task4_shared_objects.txt
+ 1917  cat /etc/ld.so.conf >> task4_shared_objects.txt
+ 1918  echo "" >> task4_shared_objects.txt
+ 1919  echo "--- Include files in /etc/ld.so.conf.d/ ---" >> task4_shared_objects.txt
+ 1920  ls /etc/ld.so.conf.d/ >> task4_shared_objects.txt
+ 1921  cat /etc/ld.so.conf.d/*.conf >> task4_shared_objects.txt 2>&1
+ 1922  echo "" >> task4_shared_objects.txt
+ 1923  echo "--- Checking if /bin/ls is dynamically linked ---" >> task4_shared_objects.txt
+ 1924  file /bin/ls >> task4_shared_objects.txt
+ 1925  echo "" >> task4_shared_objects.txt
+ 1926  echo "--- ELF header of /bin/ls ---" >> task4_shared_objects.txt
+ 1927  readelf -h /bin/ls 2>/dev/null | head -20 >> task4_shared_objects.txt
+ 1928  echo "" >> task4_shared_objects.txt
+ 1929  echo "--- Shared libraries loaded by current shell (from /proc) ---" >> task4_shared_objects.txt
+ 1930  cat /proc/$$/maps | grep '\.so' | awk '{print $6}' | sort -u >> task4_shared_objects.txt
+ 1931  clear
+ 1932  echo "--- Challenge Shared Objects ---" >> task4_shared_objects.txt
+ 1933  echo "Shared libraries for ssh:" >> task4_shared_objects.txt
+ 1934  ldd /usr/bin/ssh >> task4_shared_objects.txt
+ 1935  echo -n "Total dependency count: " >> task4_shared_objects.txt
+ 1936  ldd /usr/bin/ssh | wc -l >> task4_shared_objects.txt
+ 1937  echo "Math libraries (libm*):" >> task4_shared_objects.txt
+ 1938  ls /lib/x86_64-linux-gnu/libm* >> task4_shared_objects.txt
+ 1939  echo "Tracing libc.so.6 symlink:" >> task4_shared_objects.txt
+ 1940  ls -la /lib/x86_64-linux-gnu/libc.so.6 >> task4_shared_objects.txt
+ 1941  readlink -f /lib/x86_64-linux-gnu/libc.so.6 >> task4_shared_objects.txt
+ 1942  echo "Test program dependencies:" >> task4_shared_objects.txt
+ 1943  echo 'int main() { return 0; }' > /tmp/test_link.c
+ 1944  gcc /tmp/test_link.c -o /tmp/test_link 2>/dev/null
+ 1945  ldd /tmp/test_link >> task4_shared_objects.txt 2>&1
+ 1946  git add . 
+ 1947  git status
+ 1948  git add . 
+ 1949  git commit -m "Added Lab 3 README report and screenshots"
+ 1950  git push
+ 1951  git config --global --list
+ 1952  ls -a
+ 1953  ls
+ 1954  git status
+ 1955  git log --oneline
+ 1956  ssh ssh2.rathpisey.site
+ 1957  git add .
+ 1958  git commit -m "images
+ 1959  " 
+ 1960  git commit -m "images
+ 1961  " 
+ 1962  git status
+ 1963  git push 
+ 1964  ls
+ 1965  cd iamges
+ 1966  cd images
+ 1967  ls
+ 1968  git log
+ 1969  ls
+ 1970  cd os-se-p20240012-
+ 1971  git log
+ 1972  git status
+ 1973  git add . 
+ 1974  echo "=== Full Command History ===" > task_history.txt
+ 1975  history | tail -n 100 >> task_history.txt
