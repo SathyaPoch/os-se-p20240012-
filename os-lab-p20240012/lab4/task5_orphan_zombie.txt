@@ -1,0 +1,14 @@
+=== Task 5: Orphan & Zombie Processes ===
+--- Orphan process observation ---
+Child PID: 12233, Original PPID: 12232, New PPID after parent exit: 1
+--- Zombie process observation ---
+Zombie PID: 12746, State: Z (zombie/defunct), Parent PID: 12745
+--- Zombie and Orphan Cleanup Notes ---
+Q: How are orphans cleaned up? A: They are adopted by init (PID 1), which reaps them when they finish.
+Q: How are zombies cleaned up? A: The parent calls wait(), or if the parent is killed, init adopts and reaps them.
+Q: Can you kill a zombie with 'kill -9'? Why or why not? A: No, because zombies are already dead and only exist as entries in the process table.
+--- Challenge Orphan & Zombie ---
+--- Challenge 5a: Zombie Reap Observation ---
+Observation: After adding wait(), the zombie process was removed from the process table once the parent finished sleeping.
+--- Challenge 5b: Three Children ---
+Ran three_children.c; ps --forest showed 3 sleep processes under the parent PID.
