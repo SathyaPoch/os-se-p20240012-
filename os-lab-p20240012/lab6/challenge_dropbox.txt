@@ -1,0 +1,2 @@
+drwx-ws-wt 2 root devteam 4096 May 20 15:53 /opt/techcorp/dropbox
+rm: cannot remove '/opt/techcorp/dropbox/alice_file.txt': Operation not permitted
