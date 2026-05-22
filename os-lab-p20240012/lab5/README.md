@@ -74,19 +74,18 @@ Show the output of your `challenge.c` program joining its threads and exiting gr
 ## Answers to Lab Questions
 
 1. **Why do threads share memory while processes do not (by default)?**
-   > _Your answer here_
+   > Processes are isolated for system stability. Threads exist to work together within a single process, so sharing memory lets them communicate quickly without the heavy overhead of Inter-Process Communication (IPC).
 
 2. **Based on the 1:1 mapping, what is the role of an LWP (Lightweight Process) in Linux?**
-   > _Your answer here_
-
+   > An LWP acts as the kernel's representation of a user thread. This allows the OS kernel to schedule and run individual user threads across multiple CPU cores independently.
 3. **Why is it restricted to send signals to kernel threads (e.g., `kthreadd` or `kworker`)?**
-   > _Your answer here_
-
+   > Kernel threads handle critical core OS operations. If user-space signals could interrupt or kill them, it would instantly crash or corrupt the entire operating system.
 4. **Why can't `SIGKILL` (kill -9) be caught by a signal handler?**
-   > _Your answer here_
+   > SIGKILL is the kernel's absolute failsafe. If programs could block or ignore it, a frozen process could become completely unkillable and permanently lock up system resources.
 
 ---
 
 ## Reflection
 
 > _What was the most challenging part of managing threads and signals in this lab? How do you think these concepts apply to large-scale applications like web servers or databases?_
+The most challenging part of this lab was understanding how threads share memory while processes do not, especially when managing multiple threads and handling signals safely at the same time. It was also difficult to understand how Linux maps user threads to kernel threads using tools like ps and htop
