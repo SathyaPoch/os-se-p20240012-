@@ -89,25 +89,25 @@ Show `cat task8_mailman.txt` with mailman output and messages received in your i
 ## Answers to Lab Questions
 
 1. **Why did `warmup` fail before you added execute permission?**
-   > _Your answer here_
+   > Linux creates files as plain text by default for security. You have to explicitly add execute (+x) permissions so the operating system knows it is allowed to run as a program.
 
 2. **What does adding `~/bin` to `PATH` allow you to do?**
-   > _Your answer here_
+   > It lets you run your personal scripts from anywhere in the terminal just by typing the script's name, without needing to type the full path (like ./warmup).
 
 3. **Why does `chmod 733 public_inbox` allow classmates to drop files but not list the inbox?**
-   > _Your answer here_
+   > The 3 gives them write (w) and execute (x) permissions. Execute lets them enter the directory, and write lets them add files. However, because they lack read (r) permission, they can't use ls to see what is already inside.
 
 4. **Why does Linux ignore SUID on shell scripts, and why did we use a compiled C program instead?**
-   > _Your answer here_
+   > Giving SUID to shell scripts is a massive security risk because attackers can easily manipulate the shell environment variables to run malicious code. We used a compiled C program because it is self-contained and much harder to hijack.
 
 5. **What is the difference between `>` and `>>` in Bash redirection?**
-   > _Your answer here_
+   >completely overwrites the target file with new data. >> appends the new data to the bottom of the existing file without deleting what is already there.
 
 6. **How did your `harvester` avoid reading files that were missing or not readable?**
-   > _Your answer here_
+   >By using a conditional test (like if [ -r filename ]) to check if the file existed and was readable before trying to open it, or by redirecting the errors away (using 2>/dev/null).
 
 7. **What permission problems did you or your classmates need to fix during the lab?**
-   > _Your answer here_
+   > The most common issue was just forgetting to run chmod +x on scripts before testing them, and fixing directory permissions so teammates could actually access and share files properly without getting "Permission denied" errors.
 
 ---
 
