@@ -1,0 +1,2 @@
+drwxrws--T 2 root devteam 4096 May 20 15:13 /opt/techcorp/devproject
+-rwsrwxr-x 1 root root 16184 May 20 15:23 whoami_suid

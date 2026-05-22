@@ -1,0 +1,5 @@
+]633;E;echo "=== inbox permissions ===";843a5566-986d-43c0-b095-3f8d0f9081b4]633;C=== inbox permissions ===
+drwx-wx-wx 2 pochsathya pochsathya 4096 May 22 11:33 /home/pochsathya/public_inbox
+=== inbox files as owner ===
+total 0
+-rw-rw-r-- 1 pochsathya pochsathya 0 May 22 11:33 server.txt
