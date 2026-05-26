@@ -1,5 +1,0 @@
-]633;E;echo "=== warmup permissions ===";843a5566-986d-43c0-b095-3f8d0f9081b4]633;C=== warmup permissions ===
--rwxrwxr-x 1 pochsathya pochsathya 66 May 22 11:18 /home/pochsathya/bin/warmup
-=== warmup output ===
-Hello from my first script! My current directory is:
-/home/pochsathya/bin

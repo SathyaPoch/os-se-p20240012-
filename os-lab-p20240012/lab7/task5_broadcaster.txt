@@ -1,6 +1,0 @@
-]633;E;echo "=== broadcaster script ===";843a5566-986d-43c0-b095-3f8d0f9081b4]633;C=== broadcaster script ===
--rwxrwxr-x 1 pochsathya pochsathya 331 May 22 11:40 /home/pochsathya/bin/broadcaster
-=== outbox permissions ===
-drwxr-xr-x 2 pochsathya pochsathya 4096 May 22 11:40 /home/pochsathya/public_outbox
-=== secret.txt ===
-filesystem - 2026-05-22 11:40:25
