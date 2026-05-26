@@ -1,0 +1,6 @@
+=== guestbook permissions ===
+-rw------- 1 se-sathya-poch se-sathya-poch 45 May 26 14:24 /home/se-sathya-poch/guestbook.txt
+=== sign_book permissions ===
+-rwsr-xr-x 1 se-sathya-poch se-sathya-poch 16096 May 26 14:23 /home/se-sathya-poch/bin/sign_book
+=== guestbook contents ===
+Visitor signed: Hello from se-song-phengroth

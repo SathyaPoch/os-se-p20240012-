@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    FILE *file = fopen("/home/YOUR_USERNAME/guestbook.txt", "a");
+    FILE *file = fopen("/home/se-sathya-poch/guestbook.txt", "a");
     if (file == NULL) {
         printf("Error opening guestbook.\n");
         return 1;

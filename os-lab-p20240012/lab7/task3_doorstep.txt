@@ -1,6 +1,6 @@
 ========================================
-Welcome, pochsathya
-Users currently logged in: 1
-Server uptime: up 14 minutes
-Random tech quote: Automate the boring stuff.
+Welcome, se-sathya-poch
+Users currently logged in: 19
+Server uptime: up 21 hours, 40 minutes
+Random tech quote: Keep calm and check the logs.
 ========================================
