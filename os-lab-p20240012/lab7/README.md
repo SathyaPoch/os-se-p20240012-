@@ -113,4 +113,4 @@ Show `cat task8_mailman.txt` with mailman output and messages received in your i
 
 ## Reflection
 
-> _What did this lab teach you about combining scripting, permissions, and automation on a shared Linux server?_
+> _What did this lab teach you about combining scripting, permissions, and automation on a shared Linux server?_ I learned to set permission so that other people could edit files in my directory ,
