@@ -1,5 +1,3 @@
-package activity4.java_before;
-
 import java.io.*;
 import java.net.*;
 
