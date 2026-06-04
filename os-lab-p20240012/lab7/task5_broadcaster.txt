@@ -1,0 +1,6 @@
+=== broadcaster script ===
+-rwxr-xr-x 1 se-sathya-poch se-sathya-poch 312 Jun  7 14:40 /home/se-sathya-poch/bin/broadcaster
+=== outbox permissions ===
+drwxr-xr-x 2 se-sathya-poch se-sathya-poch 4096 Jun  7 14:20 /home/se-sathya-poch/public_outbox
+=== secret.txt ===
+scheduler - 2026-05-26 14:20:36

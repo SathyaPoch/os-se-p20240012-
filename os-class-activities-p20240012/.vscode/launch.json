@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "DeadlockRecovery",
+      "request": "launch",
+      "mainClass": "activity6.task3_recovery.DeadlockRecovery",
+      "projectName": "os-class-activities-p20240012_2155968e"
+    },
+    {
+      "type": "java",
+      "name": "DeadlockFixed",
+      "request": "launch",
+      "mainClass": "activity6.task2_prevention.DeadlockFixed",
+      "projectName": "os-class-activities-p20240012_2155968e"
+    },
+    {
+      "type": "java",
+      "name": "DeadlockSimulation",
+      "request": "launch",
+      "mainClass": "activity6.task1_deadlock.DeadlockSimulation",
+      "projectName": "os-class-activities-p20240012_2155968e"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
