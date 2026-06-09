@@ -2,10 +2,10 @@
 /home/se-sathya-poch/os-lab-deadlock
 === vault directories ===
 drwxrwxr-x 2 se-sathya-poch se-sathya-poch 4096 Jun  9 13:11 /home/se-sathya-poch/os-lab-deadlock/vault_alpha
-drwxrwxr-x 2 se-sathya-poch se-sathya-poch 4096 Jun  9 13:11 /home/se-sathya-poch/os-lab-deadlock/vault_beta
+drwxrwxr-x 2 se-sathya-poch se-sathya-poch 4096 Jun  9 13:18 /home/se-sathya-poch/os-lab-deadlock/vault_beta
 === vault lock files ===
--rw-rw-r-- 1 se-sathya-poch se-sathya-poch 0 Jun  9 13:11 /home/se-sathya-poch/os-lab-deadlock/vault_alpha/vault.lock
--rw-rw-r-- 1 se-sathya-poch se-sathya-poch 0 Jun  9 13:11 /home/se-sathya-poch/os-lab-deadlock/vault_beta/vault.lock
+-rw-rw-r-- 1 se-sathya-poch se-sathya-poch 0 Jun  9 14:02 /home/se-sathya-poch/os-lab-deadlock/vault_alpha/vault.lock
+-rw-rw-r-- 1 se-sathya-poch se-sathya-poch 0 Jun  9 14:02 /home/se-sathya-poch/os-lab-deadlock/vault_beta/vault.lock
 === vault marker files ===
-Vault Alpha local resource for <YourStudentID>
-Vault Beta local resource for <YourStudentID>
+Vault Alpha local resource for p20240012
+Vault Beta local resource for p20240012

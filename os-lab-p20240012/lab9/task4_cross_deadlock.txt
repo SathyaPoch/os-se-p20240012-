@@ -1,0 +1,12 @@
+=== public DR permissions ===
+drwxr-x--x 12 se-sathya-poch se-sathya-poch 4096 Jun  9 13:44 /home/se-sathya-poch
+drwxrwxr-x  6 se-sathya-poch se-sathya-poch 4096 Jun  9 14:14 /home/se-sathya-poch/os-lab-deadlock
+drwxr-xr-x  2 se-sathya-poch se-sathya-poch 4096 Jun  9 14:14 /home/se-sathya-poch/os-lab-deadlock/public_dr_beta
+total 0
+-rw-rw-rw- 1 se-sathya-poch se-sathya-poch 0 Jun  9 14:31 vault.lock
+=== running cross sync processes ===
+se-song+  751673  0.0  0.0   7340  3636 pts/10   S+   14:30   0:00 /bin/bash /home/se-song-phengroth/bin/cross_sync_alpha
+se-sath+  751676  0.0  0.0   7340  3584 pts/13   S+   14:30   0:00 /bin/bash /home/se-sathya-poch/bin/cross_sync_beta
+=== partner role ===
+Partner username: Song Phengroth
+My role:  Player B

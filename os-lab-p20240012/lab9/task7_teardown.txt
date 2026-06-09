@@ -1,0 +1,61 @@
+=== teardown script ===
+-rwxrwxr-x 1 se-sathya-poch se-sathya-poch 334 Jun  9 14:49 /home/se-sathya-poch/bin/teardown
+=== process check ===
+se-chhe+  765921  0.0  0.0   7340  3580 pts/34   S+   14:50   0:00 /bin/bash /home/se-chheng-sokuntheary/bin/sync_up
+se-chhe+  766233  0.0  0.0   7340  3624 pts/25   S+   14:50   0:00 /bin/bash /home/se-chheng-sokuntheary/bin/sync_down
+=== final working folder ===
+/home/se-sathya-poch/os-lab-deadlock
+/home/se-sathya-poch/os-lab-deadlock/.git
+/home/se-sathya-poch/os-lab-deadlock/.git/branches
+/home/se-sathya-poch/os-lab-deadlock/.git/COMMIT_EDITMSG
+/home/se-sathya-poch/os-lab-deadlock/.git/config
+/home/se-sathya-poch/os-lab-deadlock/.git/description
+/home/se-sathya-poch/os-lab-deadlock/.git/FETCH_HEAD
+/home/se-sathya-poch/os-lab-deadlock/.git/HEAD
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/applypatch-msg.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/commit-msg.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/fsmonitor-watchman.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/post-update.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/pre-applypatch.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/pre-commit.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/pre-merge-commit.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/prepare-commit-msg.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/pre-push.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/pre-rebase.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/pre-receive.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/push-to-checkout.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/sendemail-validate.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/hooks/update.sample
+/home/se-sathya-poch/os-lab-deadlock/.git/index
+/home/se-sathya-poch/os-lab-deadlock/.git/info
+/home/se-sathya-poch/os-lab-deadlock/.git/info/exclude
+/home/se-sathya-poch/os-lab-deadlock/.git/logs
+/home/se-sathya-poch/os-lab-deadlock/.git/logs/HEAD
+/home/se-sathya-poch/os-lab-deadlock/.git/logs/refs
+/home/se-sathya-poch/os-lab-deadlock/.git/objects
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/23
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/50
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/55
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/60
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/66
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/ab
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/c2
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/ce
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/cf
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/e6
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/eb
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/info
+/home/se-sathya-poch/os-lab-deadlock/.git/objects/pack
+/home/se-sathya-poch/os-lab-deadlock/.git/refs
+/home/se-sathya-poch/os-lab-deadlock/.git/refs/heads
+/home/se-sathya-poch/os-lab-deadlock/.git/refs/remotes
+/home/se-sathya-poch/os-lab-deadlock/.git/refs/tags
+/home/se-sathya-poch/os-lab-deadlock/public_dr_beta
+/home/se-sathya-poch/os-lab-deadlock/public_dr_beta/vault.lock
+/home/se-sathya-poch/os-lab-deadlock/vault_alpha
+/home/se-sathya-poch/os-lab-deadlock/vault_alpha/README.txt
+/home/se-sathya-poch/os-lab-deadlock/vault_alpha/vault.lock
+/home/se-sathya-poch/os-lab-deadlock/vault_beta
+/home/se-sathya-poch/os-lab-deadlock/vault_beta/README.txt
+/home/se-sathya-poch/os-lab-deadlock/vault_beta/vault.lock
