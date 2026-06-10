@@ -1,0 +1,8 @@
+=== drop zone permissions ===
+drwxrwxrwt 2 se-sathya-poch se-sathya-poch 4096 Jun 13 15:44 /home/se-sathya-poch/vendor_reports
+=== drop zone files ===
+total 8
+-rw-rw-r-- 1 se-sathya-poch se-sathya-poch 27 Jun 13 15:35 my_rules.txt
+-rw-rw-r-- 1 se-sathya-poch se-sathya-poch 15 Jun 13 15:44 partner_report.txt
+=== partner deletion result ===
+Paste or summarize the Permission denied result here.

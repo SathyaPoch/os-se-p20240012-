@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Prompt the operator for a folder name
+read -r -p "Drop zone folder name: " folder
+
+# Create the folder in the home directory
+mkdir -p "$HOME/$folder"
+
+# Allow others to write and enter the directory
+chmod o+wx "$HOME/$folder"
+
+# Apply the sticky bit so only owners can delete their files
+chmod +t "$HOME/$folder"
+
+# Print the final permissions
+echo "Created $HOME/$folder with permissions:"
+ls -ld "$HOME/$folder"

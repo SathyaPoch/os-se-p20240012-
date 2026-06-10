@@ -1,0 +1,15 @@
+
+    final inventory after each of the five runs
+    whether each result was expected or suspicious
+    a 2-3 sentence explanation of why the value changes based on OS process scheduling
+
+Example format:
+
+Run 1 final inventory: __
+Run 2 final inventory: __
+Run 3 final inventory: __
+Run 4 final inventory: __
+Run 5 final inventory: __
+
+Explanation:
+...

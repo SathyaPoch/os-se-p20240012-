@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# ==========================================
+# 1. Argument Check & Input Validation
+# ==========================================
+if [ "$#" -ne 2 ]; then
+    echo "Usage: buy_widget <username> <quantity>"
+    exit 1
+fi
+
+USERNAME=$1
+QUANTITY=$2
+
+if [[ -z "$QUANTITY" ]] || ! [[ "$QUANTITY" =~ ^[1-9][0-9]*$ ]]; then
+    echo "Error: Quantity must be a positive integer."
+    exit 1
+fi
+
+# Define local paths (Anchored for Level 5 compatibility)
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+INVENTORY_FILE="$script_dir/inventory.txt"
+LOG_FILE="$script_dir/sales.log"
+LOCK_FILE="$script_dir/inventory.lock"
+
+# ==========================================
+# 2. Logging Function
+# ==========================================
+log_transaction() {
+    local user="$1"
+    local qty="$2"
+    
+    # Format matches the lab requirement with your Student ID
+    echo "[p20240012] [SUCCESS] $user bought $qty widgets." >> "$LOG_FILE"
+}
+
+# ==========================================
+# 3. Purchase Logic (File I/O with Mutex)
+# ==========================================
+(
+    flock -x 200
+
+    if [ ! -f "$INVENTORY_FILE" ]; then
+        echo "Error: Inventory file missing."
+        exit 1
+    fi
+
+    # Read current stock
+    CURRENT_STOCK=$(cat "$INVENTORY_FILE")
+
+    # Validate availability
+    if [ "$CURRENT_STOCK" -ge "$QUANTITY" ]; then
+        # Calculate and overwrite inventory
+        NEW_STOCK=$((CURRENT_STOCK - QUANTITY))
+        echo "$NEW_STOCK" > "$INVENTORY_FILE"
+        
+        # Execute the log function
+        log_transaction "$USERNAME" "$QUANTITY"
+        echo "Transaction successful!"
+    else
+        # Required strict error string
+        echo "Transaction Failed: Not enough inventory!"
+        exit 1
+    fi
+) 200> "$LOCK_FILE"
+
+exit $?

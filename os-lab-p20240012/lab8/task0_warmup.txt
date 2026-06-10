@@ -1,11 +1,11 @@
-]633;E;cd ~/bin;615d0d59-b85a-413d-8f53-b49399591fc0]633;C=== argument viewer with arguments ===
-Script name ($0): ./arg_viewer
+=== argument viewer with arguments ===
+Script name ($0): /home/se-sathya-poch/bin/arg_viewer
 First argument ($1): Alice
 Second argument ($2): 3
 Number of arguments ($#): 2
 Exit status of 'test -n $1' ($?): 0
 === argument viewer with no arguments ===
-Script name ($0): ./arg_viewer
+Script name ($0): /home/se-sathya-poch/bin/arg_viewer
 First argument ($1): 
 Second argument ($2): 
 Number of arguments ($#): 0
@@ -22,4 +22,4 @@ exit status after success: 0
 Error: cycles must be a positive integer.
 exit status after invalid input: 2
 === loop/log directory evidence ===
-drwxrwxr-x 2 pochsathya pochsathya 4096 Jun  2 14:52 /home/pochsathya/bin/probe_logs
+drwxrwxr-x 2 se-sathya-poch se-sathya-poch 4096 Jun 11 17:57 /home/se-sathya-poch/bin/probe_logs
