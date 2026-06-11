@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Assigning command-line arguments to normal variables
+operator="$1"
+cycles="$2"
+
+# 1. Validate argument count ($#)
+if [ "$#" -ne 2 ]; then
+    echo "Usage: quantum_probe <operator> <cycles>"
+    exit 1
+fi
+
+# 2. Reject non-positive or non-integer cycle counts
+if ! [[ "$cycles" =~ ^[1-9][0-9]*$ ]]; then
+    echo "Error: cycles must be a positive integer."
+    exit 2
+fi
+
+# 3. Create the log directory and capture exit status ($?)
+mkdir -p probe_logs
+mkdir_status=$?
+
+echo "mkdir exit status: $mkdir_status"
+
+if [ "$mkdir_status" -ne 0 ]; then
+    echo "Could not prepare probe_logs."
+    exit 3
+fi
+
+# Print diagnostic parameters
+echo "Operator: $operator"
+echo "Cycles requested: $cycles"
+
+for i in $(seq 1 "$cycles"); do
+    echo "Cycle $i: quantum widget console online"
+done
+
+exit 0
