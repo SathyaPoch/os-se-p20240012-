@@ -1,0 +1,19 @@
+=== script permissions ===
+-rwxrwxr-x 1 se-sathya-poch se-sathya-poch 405 Jun 16 13:41 /home/se-sathya-poch/bin/automation_demo
+=== log contents ===
+2026-06-16 13:31:54 | automation_demo started by user se-sathya-poch
+2026-06-16 13:31:54 | working directory is /home/se-sathya-poch/os-se-p20240012-/os-lab-p20240012/lab10
+2026-06-16 13:31:54 | home directory is /home/se-sathya-poch
+2026-06-16 13:31:54 | automation_demo finished successfully
+2026-06-16 13:31:54 | automation_demo started by user se-sathya-poch
+2026-06-16 13:31:54 | working directory is /home/se-sathya-poch/os-se-p20240012-/os-lab-p20240012/lab10
+2026-06-16 13:31:54 | home directory is /home/se-sathya-poch
+2026-06-16 13:31:54 | automation_demo finished successfully
+2026-06-16 13:41:58 | automation_demo started by user se-sathya-poch
+2026-06-16 13:41:58 | working directory is /home/se-sathya-poch/os-se-p20240012-/os-lab-p20240012/lab10
+2026-06-16 13:41:58 | home directory is /home/se-sathya-poch
+2026-06-16 13:41:58 | automation_demo finished successfully
+2026-06-16 13:41:58 | automation_demo started by user se-sathya-poch
+2026-06-16 13:41:58 | working directory is /home/se-sathya-poch/os-se-p20240012-/os-lab-p20240012/lab10
+2026-06-16 13:41:58 | home directory is /home/se-sathya-poch
+2026-06-16 13:41:58 | automation_demo finished successfully

@@ -1,0 +1,23 @@
+=== backup script permissions ===
+-rwxrwxr-x 1 se-sathya-poch se-sathya-poch 792 Jun 16 13:45 /home/se-sathya-poch/bin/backup_project
+=== archives kept (should be 3) ===
+/home/se-sathya-poch/os-lab-automation/backups/project_20260616_134527.tar.gz
+/home/se-sathya-poch/os-lab-automation/backups/project_20260616_134526.tar.gz
+/home/se-sathya-poch/os-lab-automation/backups/project_20260616_134525.tar.gz
+=== backup log ===
+2026-06-16 13:45:24 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:24 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134524.tar.gz
+2026-06-16 13:45:24 | no old archives to prune
+2026-06-16 13:45:24 | backup finished successfully
+2026-06-16 13:45:25 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:25 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134525.tar.gz
+2026-06-16 13:45:25 | no old archives to prune
+2026-06-16 13:45:25 | backup finished successfully
+2026-06-16 13:45:26 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:26 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134526.tar.gz
+2026-06-16 13:45:26 | no old archives to prune
+2026-06-16 13:45:26 | backup finished successfully
+2026-06-16 13:45:27 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:27 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134527.tar.gz
+2026-06-16 13:45:27 | pruned old archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134524.tar.gz
+2026-06-16 13:45:27 | backup finished successfully

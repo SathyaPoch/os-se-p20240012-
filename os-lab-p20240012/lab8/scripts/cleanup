@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Get the filename of this script so it doesn't move itself
+SCRIPT_NAME=$(basename "$0")
+
+# Loop through all files in the current directory
+for file in *; do
+    # Ensure it's a regular file and not this script
+    if [ -f "$file" ] && [ "$file" != "$SCRIPT_NAME" ]; then
+        
+        # Extract the extension (everything after the last dot)
+        ext="${file##*.}"
+        
+        # Check if the file actually has an extension
+        # (If there is no dot, $ext will equal the full filename)
+        if [ "$ext" != "$file" ] && [ -n "$ext" ]; then
+            
+            # Convert extension to lowercase (optional, for consistency)
+            ext=$(echo "$ext" | tr '[:upper:]' '[:lower:]')
+            
+            # Create the folder if it doesn't exist
+            mkdir -p "$ext"
+            
+            # Move the file into the matching folder
+            mv "$file" "$ext/"
+            echo "Moved $file to $ext/"
+        fi
+    fi
+done

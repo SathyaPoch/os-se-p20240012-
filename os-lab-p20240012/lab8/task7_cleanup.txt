@@ -1,7 +1,16 @@
 .
 ├── cleanup
-├── data.csv
-├── error.tmp
-└── test.log
+├── csv
+│   └── data.csv
+├── log
+│   └── test.log
+├── scripts
+│   ├── arg_viewer
+│   ├── bot_swarm
+│   ├── buy_widget
+│   ├── create_dropzone
+│   └── quantum_probe
+└── tmp
+    └── error.tmp
 
-1 directory, 4 files
+5 directories, 9 files
