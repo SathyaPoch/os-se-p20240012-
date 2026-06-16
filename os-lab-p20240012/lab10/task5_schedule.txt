@@ -1,0 +1,56 @@
+=== my username ===
+se-sathya-poch
+=== installed cron jobs ===
+# Lab10 heartbeat - runs every minute
+* * * * * date '+\%Y-\%m-\%d \%H:\%M:\%S heartbeat' >> $HOME/os-lab-automation/logs/heartbeat.log 2>&1
+# Lab10 file backup - every 2 minutes (TEST interval)
+*/2 * * * * /home/<YourUsername>/bin/backup_project >> /home/<YourUsername>/os-lab-automation/logs/cron_backup.log 2>&1 
+# Lab10 GRADED session job - fires once at 2:30 PM on 2026-06-16 (lab session)
+30 14 16 6 * /home/<YourUsername>/bin/lab_session_job >> /home/<YourUsername>/os-lab-automation/logs/cron_session_job.log 2>&1
+
+# Lab10 GRADED deadline job - fires once at 2:30 PM on 2026-06-22 (before deadline)
+30 14 22 6 * /home/<YourUsername>/bin/deadline_job >> /home/<YourUsername>/os-lab-automation/logs/cron_deadline_job.log 2>&1
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+=== archives produced by cron ===
+/home/se-sathya-poch/os-lab-automation/backups/project_20260616_134527.tar.gz
+/home/se-sathya-poch/os-lab-automation/backups/project_20260616_134526.tar.gz
+/home/se-sathya-poch/os-lab-automation/backups/project_20260616_134525.tar.gz
+=== backup log (note the new timestamps from cron) ===
+2026-06-16 13:45:24 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:24 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134524.tar.gz
+2026-06-16 13:45:24 | no old archives to prune
+2026-06-16 13:45:24 | backup finished successfully
+2026-06-16 13:45:25 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:25 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134525.tar.gz
+2026-06-16 13:45:25 | no old archives to prune
+2026-06-16 13:45:25 | backup finished successfully
+2026-06-16 13:45:26 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:26 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134526.tar.gz
+2026-06-16 13:45:26 | no old archives to prune
+2026-06-16 13:45:26 | backup finished successfully
+2026-06-16 13:45:27 | starting backup of /home/se-sathya-poch/os-lab-automation/project
+2026-06-16 13:45:27 | created archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134527.tar.gz
+2026-06-16 13:45:27 | pruned old archive /home/se-sathya-poch/os-lab-automation/backups/project_20260616_134524.tar.gz
+2026-06-16 13:45:27 | backup finished successfully
+=== captured cron output (empty = clean) ===
+(empty)
