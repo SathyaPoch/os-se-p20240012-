@@ -1,0 +1,8 @@
+#!/bin/bash
+# Clear background transaction loop
+for i in {1..50}; do
+    buy_widget "Buyer_$i" 1 &
+done
+
+wait
+echo "All simultaneous buyer transactions complete."

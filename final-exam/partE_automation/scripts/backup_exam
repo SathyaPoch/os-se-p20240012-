@@ -1,0 +1,7 @@
+#!/bin/bash
+TARGET_FOLDER="$HOME/os-se-p20240012/final-exam"
+DESTINATION_DIR="$HOME/exam-backups"
+mkdir -p "$DESTINATION_DIR"
+
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+tar -czf "$DESTINATION_DIR/final-exam-$TIMESTAMP.tar.gz" -C "$TARGET_FOLDER" .

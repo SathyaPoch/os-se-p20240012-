@@ -1,0 +1,29 @@
+#!/bin/bash
+# Scan targets safely
+TARGET_DIRS=("partA_threads" "partB_security" "missing_folder_test")
+REPORT="consolidated_report.txt"
+
+echo "=== System Operator Safe Scan Report ===" > "$REPORT"
+
+for dir in "${TARGET_DIRS[@]}"; do
+    # Absolute resolution path fallback check
+    FULL_PATH="$HOME/os-se-p20240012/final-exam/$dir"
+    
+    if [ ! -d "$FULL_PATH" ]; then
+        echo "[WARNING] Directory missing or inaccessible: $dir" >> "$REPORT"
+        continue
+    fi
+    
+    echo "Scanning folder structure: $dir" >> "$REPORT"
+    for file in "$FULL_PATH"/*; do
+        if [ -f "$file" ]; then
+            if [ -r "$file" ]; then
+                echo "  [READABLE] File: $(basename "$file") | Size: $(stat -c %s "$file") bytes" >> "$REPORT"
+            else
+                echo "  [SKIPPED] File unreadable: $(basename "$file")" >> "$REPORT"
+            fi
+        fi
+    done
+done
+
+echo "Report generation successful."

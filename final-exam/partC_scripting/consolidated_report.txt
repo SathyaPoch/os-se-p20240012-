@@ -1,0 +1,4 @@
+=== System Operator Safe Scan Report ===
+[WARNING] Directory missing or inaccessible: partA_threads
+[WARNING] Directory missing or inaccessible: partB_security
+[WARNING] Directory missing or inaccessible: missing_folder_test

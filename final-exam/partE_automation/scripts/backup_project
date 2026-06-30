@@ -1,0 +1,17 @@
+#!/bin/bash
+TARGET_SOURCE="$HOME/project_source"
+BACKUP_DIR="backups"
+mkdir -p "$BACKUP_DIR"
+mkdir -p "logs"
+
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+ARCHIVE_NAME="$BACKUP_DIR/project_backup_$TIMESTAMP.tar.gz"
+
+# Compress target structural elements
+tar -czf "$ARCHIVE_NAME" -C "$TARGET_SOURCE" .
+
+echo "[$(date)] Backup completed successfully: $ARCHIVE_NAME" >> "logs/backup.log"
+
+# Strict Retention Engine: Keep newest 3 elements, delete the rest
+cd "$BACKUP_DIR" || exit
+ls -t project_backup_*.tar.gz | tail -n +4 | xargs -r rm

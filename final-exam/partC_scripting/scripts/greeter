@@ -1,0 +1,19 @@
+#!/bin/bash
+USER_NAME=$(whoami)
+ONLINE_USERS=$(who -q | head -n 1)
+SYS_UPTIME=$(uptime -p)
+
+MESSAGES=(
+    "System engineering requires focus and structure."
+    "Automation is operational efficiency realized."
+    "Always check your logs before deploying to production."
+)
+
+RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+
+echo "=========================================="
+echo " Welcome Back, $USER_NAME"
+echo " Active Swarm Monitors: $ONLINE_USERS"
+echo " Uptime: $SYS_UPTIME"
+echo " Log Line of the Day: \"$RANDOM_MSG\""
+echo "=========================================="

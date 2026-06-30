@@ -1,0 +1,4 @@
+Run 1 Unpatched Stock Total remaining: 149
+Run 2 Unpatched Stock Total remaining: 149
+Patched Target Stock Remaining (Should be 100): 100
+Patched Target Stock Remaining (Should be 100): 100

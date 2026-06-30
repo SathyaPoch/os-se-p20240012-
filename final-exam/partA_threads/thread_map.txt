@@ -1,0 +1,6 @@
+se-sath+ 1463727 1436890 1463727  0    6 13:34 pts/0    00:00:00 ./partA_threads/thread_demo
+se-sath+ 1463727 1436890 1463728  0    6 13:34 pts/0    00:00:00 ./partA_threads/thread_demo
+se-sath+ 1463727 1436890 1463729  0    6 13:34 pts/0    00:00:00 ./partA_threads/thread_demo
+se-sath+ 1463727 1436890 1463730  0    6 13:34 pts/0    00:00:00 ./partA_threads/thread_demo
+se-sath+ 1463727 1436890 1463731  0    6 13:34 pts/0    00:00:00 ./partA_threads/thread_demo
+se-sath+ 1463727 1436890 1463732  0    6 13:34 pts/0    00:00:00 ./partA_threads/thread_demo

@@ -1,0 +1,6 @@
+#!/bin/bash
+LOG_TARGET=$1
+if [ -z "$LOG_TARGET" ]; then
+    exit 1
+fi
+echo "[CRON EXECUTION] Automation Event Fired At: $(date) | Run Authorized" >> "$LOG_TARGET"

@@ -1,0 +1,30 @@
+#!/bin/bash
+STOCK_FILE="stock.txt"
+LOG_FILE="sales.log"
+LOCK_FILE="transaction.lock"
+
+BUYER=$1
+QTY=$2
+
+if [ -z "$BUYER" ] || ! [[ "$QTY" =~ ^[0-9]+$ ]] || [ "$QTY" -le 0 ]; then
+    echo "Error: Invalid inputs."
+    exit 1
+fi
+
+# Open lock file descriptor
+exec 200>"$LOCK_FILE"
+
+# Acquire exclusive OS-level block lock
+flock -x 200
+
+CURRENT_STOCK=$(cat "$STOCK_FILE")
+
+if [ "$CURRENT_STOCK" -ge "$QTY" ]; then
+    sleep 0.05
+    NEW_STOCK=$((CURRENT_STOCK - QTY))
+    echo "$NEW_STOCK" > "$STOCK_FILE"
+    echo "[SUCCESS] Buyer: $BUYER bought $QTY units | Student ID: p20240012" >> "$LOG_FILE"
+    exit 0
+else
+    exit 1
+fi

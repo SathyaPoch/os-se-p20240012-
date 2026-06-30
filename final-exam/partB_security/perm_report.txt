@@ -1,0 +1,10 @@
+-rw------- 1 se-sathya-poch se-sathya-poch 0 Jun 30 13:48 private_file
+drwx--x--x 2 se-sathya-poch se-sathya-poch 4096 Jun 30 13:49 shared_dir
+  File: private_file
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 252,0	Inode: 47349109    Links: 1
+Access: (0600/-rw-------)  Uid: ( 1141/se-sathya-poch)   Gid: ( 1143/se-sathya-poch)
+Access: 2026-06-30 13:48:51.662947013 +0700
+Modify: 2026-06-30 13:48:51.662947013 +0700
+Change: 2026-06-30 13:49:29.586729526 +0700
+ Birth: 2026-06-30 13:48:51.662947013 +0700
