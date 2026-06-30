@@ -1,6 +1,20 @@
 #!/bin/bash
 LOG_TARGET=$1
+TOKEN="DAYLOCK"
+TODAY=$(date +"%Y-%m-%d")
+TODAY_TOKEN="$TODAY-$TOKEN"
+
 if [ -z "$LOG_TARGET" ]; then
     exit 1
 fi
-echo "[CRON EXECUTION] Automation Event Fired At: $(date) | Run Authorized" >> "$LOG_TARGET"
+
+mkdir -p "$(dirname "$LOG_TARGET")"
+
+if grep -q "$TODAY_TOKEN" "$LOG_TARGET" 2>/dev/null; then
+    echo "[SKIPPED] Automation already ran today | Token: $TODAY_TOKEN | Time: $(date)" >> "$LOG_TARGET"
+    echo "Skipped: token already exists for today."
+    exit 0
+fi
+
+echo "[CRON EXECUTION] Automation Event Fired At: $(date) | Token: $TODAY_TOKEN | Run Authorized" >> "$LOG_TARGET"
+echo "Run completed with token: $TODAY_TOKEN"
