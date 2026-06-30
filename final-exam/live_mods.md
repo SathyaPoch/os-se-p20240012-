@@ -85,11 +85,9 @@ gcc -pthread partA_threads/thread_demo.c -o partA_threads/thread_demo
 ---
 
 ## Curveball D — per-buyer purchase cap
-
-- **Issued value:** cap = `<N>`
-- **Announced instruction:** <paste>
-- **Live value(s) I acted on:** stock before = `<...>`; order(s) rejected for exceeding
-  the cap = `<...>`; final stock = `<...>`
+- **Issued value:** cap = `9` units
+- **Announced instruction:** Add an immediate validation guard to your buy_widget script rejecting any single order over 9 items. Log the rejection including student ID p20240012, reset stock, run swarm, and show it stays consistent while honoring the cap restriction.
+- **Live value(s) I acted on:** stock before = `150`; order(s) rejected for exceeding the cap = `[REJECTED] Buyer: Buyer_BigFish requested 10 units | Order exceeds cap of 9 | Student ID: p20240012`; final stock = `100`
 - **Commands:**
 
 ```bash
@@ -160,10 +158,9 @@ cat partD_secure/sales.log | grep REJECTED
 
 ## Curveball E — idempotent timed_job
 
-- **Issued value:** token = `<TOKEN>`
-- **Announced instruction:** <paste>
-- **Live value(s) I acted on:** today's marker line = `<...>`; 1st trigger = ran,
-  2nd trigger = skipped
+- **Issued value:** token = `DAYLOCK`
+- **Announced instruction:** Modify your timed_job script to handle an operational token named DAYLOCK. It must use date-checking logic to refuse running more than once per day, appending an explicit skip marker to the log file on any subsequent execution attempts.
+- **Live value(s) I acted on:** today's marker line = `2026-06-30-DAYLOCK`; 1st trigger = ran, 2nd trigger = skipped
 - **Commands:**
 
 ```bash

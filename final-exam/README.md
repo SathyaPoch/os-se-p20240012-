@@ -6,7 +6,7 @@ Student name: Poch Sathya
 Student ID: p20240012
 Server username: se-sathya-poch
 Exam scenario value (COMPANY / PRODUCT): TechCorp
-Date & start time: 1:00 -3:00
+Date & start time: 30/6/2026 1:00 -3:00
 AI assistant used (name/none): Chat gpt , gemini
 ```
 
@@ -17,52 +17,38 @@ AI assistant used (name/none): Chat gpt , gemini
 
 ## Part A — Threads, Kernel Mapping & Signals
 
-**Screenshots**
-
-![A1 — all workers + summary](partA_threads/images/a1_thread_run.png)
-![A2 — signal_demo: commands + interaction (signal sent, cleanup msg, clean exit)](partA_threads/images/a2_signal_catch.png)
-
 **Written (one short answer)**
 
 - **Why does a worker thread's joined result reach the main thread, but a forked
   child's value would not?**
-  <threads share one address space (joined value read from shared memory); a forked
-  child runs in a copied address space, so its changes never reach the parent>
 
-**Anything not completed:** <none / ...>
+  Threads share memory with the main thread, so `pthread_join` can return the worker's result. A forked child has separate memory, so its changes do not directly affect the parent.
 
+**Anything not completed:** none
 ---
 
 ## Part B — Files, Permissions & Special Bits
-
-**Screenshot**
-
-![B1 — setuid / setgid / sticky bits + id output](partB_security/images/b1_special_bits.png)
 
 **Written (one short answer)**
 
 - **Translate your private file's final octal mode into the 9-char symbolic string**
   (e.g. `600` → `rw-------`).
-  octal `<NNN>` → `<rwx-style>`
 
-**Anything not completed:** <none / ...>
+  octal `600` → `rw-------`
 
+**Anything not completed:** none
 ---
 
 ## Part C — Bash Scripting, PATH & Safe File Scanning
-
-**Screenshot**
-
-![C1 — collector run + consolidated report](partC_scripting/images/c1_collector_run.png)
 
 **Written (one short answer)**
 
 - **Why did `greeter` fail to run by name before you added your `bin` directory to
   PATH?**
-  <the shell only searches directories listed in $PATH; adding ~/bin let it resolve the
-  bare name `greeter`>
 
-**Anything not completed:** <none / ...>
+  It failed because `~/bin` was not in `PATH`, so the shell could not find `greeter` by name.
+
+**Anything not completed:** none
 
 ---
 
@@ -71,16 +57,16 @@ AI assistant used (name/none): Chat gpt , gemini
 **Screenshot**
 
 ![D2 — swarm lands at the correct stock after the lock](partD_secure/images/d2_patched.png)
+s
 
 **Written (one short answer)**
 
 - **Why did the unpatched `swarm` sometimes leave more stock than the correct final
-  value (with `<INITIAL_STOCK>` stock and `<SWARM_SIZE>` concurrent buyers)?**
-  <concurrent buyers read the same stale stock (lost update), so some decrements
-  overwrote each other — fewer than expected applied>
+  value (with `150` stock and `50` concurrent buyers)?**
 
-**Anything not completed:** <note here if the race was hard to reproduce — D3's lock is
-what's graded>
+  Multiple buyers read the same stock value at the same time, so some updates overwrote others. This caused lost decrements and left extra stock.
+
+**Anything not completed:** none
 
 ---
 
@@ -88,12 +74,12 @@ what's graded>
 
 **Screenshot**
 
-![E1 — only RETAIN_N archives remain + log](partE_automation/images/e1_backup_retention.png)
+![E1 — only 3 archives remain + log](partE_automation/images/e1_backup_retention.png)
 
 **Written (one short answer)**
 
 - **Archiving vs compression — which one actually shrank the bytes, and why?**
-  <tar archives (bundles) many files into one; gzip/compression shrinks bytes —
-  compression reduced the size>
 
-**Anything not completed:** <none / ...>
+  `tar` only bundles files together. `gzip` compression shrinks the bytes.
+
+**Anything not completed:** none
