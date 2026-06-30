@@ -2,12 +2,12 @@
 
 <!-- ===== COVER SHEET — required first section. Fill EVERY line. ===== -->
 ```
-Student name:
-Student ID:
-Server username:
-Exam scenario value (COMPANY / PRODUCT):
-Date & start time:
-AI assistant used (name/none):
+Student name: Poch Sathya
+Student ID: p20240012
+Server username: se-sathya-poch
+Exam scenario value (COMPANY / PRODUCT): TechCorp
+Date & start time: 1:00 -3:00
+AI assistant used (name/none): Chat gpt , gemini
 ```
 
 > Exact commands per part are in `commands.md`. Live-curveball answers are in `live_mods.md`.
